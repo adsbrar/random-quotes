@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Title Goes Here</title>
+	<link rel="stylesheet" href="stylesheet.css">
+				
+</head>
+<body>
+
+<div align="center">
+	<h1 id = "quote"></h1>
+</div>
+<script>
+
+	var quotes = [
+	"Until you've lost your reputation, you never realize what a burden it was or what freedom really is",
+	"Impropriety is the soul of wit",
+	"The revenge of an elder sister may be long in coming, but, like a South-Eastern express, it arrives in its own good time",
+	"Puns are the smallpox of the language",
+	"The Diogenes Club is the queerest club in London, and Mycroft one of the queerest men"
+	];
+
+	document.getElementById('quote').innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
+	
+</script>
+</body>
+</html>
